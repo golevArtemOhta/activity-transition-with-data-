@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         var et = findViewById<EditText>(R.id.editText)
         var btn = findViewById<Button>(R.id.button)
-
+//передача данных по кнопке
         btn.setOnClickListener {
             val i = Intent(this, SecondActivity::class.java)
             i.putExtra("key", et.getText().toString())
